@@ -5,16 +5,20 @@
   --primary-color: #020228;
   --secondary-color: #ff00e5;
   --tertiary-color: #b535f6;
-  --btn-bg-color-gradient: linear-gradient(45deg,
-      #9b34ef 0%,
-      #490cb0 20%,
-      transparent 50%);
+  --btn-bg-color-gradient: linear-gradient(
+    45deg,
+    #9b34ef 0%,
+    #490cb0 20%,
+    transparent 50%
+  );
   --btn-link-bg-color: #fff;
   --btn-link-color: #000;
   --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
-  --divider-bg-color: linear-gradient(90deg,
-      #5516ba,
-      rgba(255, 0, 229, 0.5) 80%);
+  --divider-bg-color: linear-gradient(
+    90deg,
+    #5516ba,
+    rgba(255, 0, 229, 0.5) 80%
+  );
   --nav-bg-color: rgba(0, 0, 0, 0.3);
   --text-color: #fff;
   --link-color: #9e86ff;
@@ -112,8 +116,6 @@ body {
   color: var(--btn-link-color);
 }
 
-
-
 /* HEADER */
 
 header {
@@ -194,9 +196,7 @@ header::after {
   animation: wiggle 2.2s linear infinite;
 }
 
-
 /* subscription */
-
 
 .subscription {
   background: url(../images/background-movies-series.png) no-repeat;
@@ -249,7 +249,6 @@ header::after {
   flex-direction: column;
   justify-content: space-between;
   transition: transform 1s ease-in-out;
-
 }
 
 .button.button--gradient {
@@ -277,7 +276,7 @@ header::after {
 }
 
 .subscription__description::marker {
-  content: '✔';
+  content: "✔";
 }
 
 /* Section Contents */
@@ -318,13 +317,11 @@ header::after {
   object-position: center;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
-
 }
 
 .contents__card:hover .contents__image {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-
 }
 
 .contents__card:nth-child(1):hover {
@@ -461,10 +458,7 @@ main {
   }
 }
 
-
 @media screen and (max-width: 767px) {
-
-
   .menu {
     width: 100%;
     padding: 12px 16px;
@@ -480,7 +474,7 @@ main {
     gap: 10px;
   }
 
-  .subscription__card{
+  .subscription__card {
     padding: 20px 40px;
   }
 
@@ -490,16 +484,16 @@ main {
     justify-content: space-between;
     font-size: 1.25rem;
     margin-bottom: 16px;
-}
+  }
 
-  .nav-buttons{
+  .nav-buttons {
     display: flex;
     flex-flow: column;
     gap: 10px;
     align-items: center;
   }
 
-  .footer__links{
+  .footer__links {
     display: flex;
     flex-flow: column;
     gap: 15px;
@@ -512,5 +506,4 @@ main {
     grid-auto-flow: column;
     overflow: auto hidden;
   }
-  
 }
